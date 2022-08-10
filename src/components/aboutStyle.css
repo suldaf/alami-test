@@ -1,0 +1,122 @@
+.root-about-container {
+  display: flex;
+  width: 100%;
+}
+
+.first-about-container {
+  width: 40%;
+  background-color: #b5af79;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.first-about-container p {
+  text-align: left;
+  padding-top: 20px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.first-about-container h1 {
+  margin-bottom: 0;
+}
+
+.second-about-container {
+  width: 60%;
+  background-color: #acaa9d;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.second-about-container h1 {
+  margin-bottom: 0;
+}
+
+.second-about-container .second-about-container-items {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.second-about-container .second-about-container-items div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 50%;
+}
+
+.second-about-container
+  .second-about-container-items
+  div.first-second-about-container-item {
+  margin-right: 10px;
+}
+
+.second-about-container
+  .second-about-container-items
+  div.second-second-about-container-item {
+  margin-left: 10px;
+}
+
+.second-about-container .second-about-container-items div p {
+  text-align: left;
+}
+
+@media (max-width: 620px) {
+  .first-about-container p {
+    font-size: 1em;
+  }
+  .second-about-container .second-about-container-items div p {
+    font-size: 1em;
+  }
+
+  .second-about-container .second-about-container-items {
+    flex-wrap: wrap;
+  }
+
+  .second-about-container .second-about-container-items div {
+    display: inline;
+    text-align: left;
+    width: 100%;
+  }
+
+  .second-about-container
+    .second-about-container-items
+    div.first-second-about-container-item {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .second-about-container
+    .second-about-container-items
+    div.second-second-about-container-item {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 800px) and (max-height: 800px) {
+  .first-about-container p {
+    font-size: 1em;
+  }
+  .second-about-container .second-about-container-items div p {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 800px), (min-height: 1000px) {
+  .first-about-container p {
+    font-size: 1.5em;
+  }
+  .second-about-container .second-about-container-items div p {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1900px) {
+  .first-about-container p {
+    font-size: 2em;
+  }
+  .second-about-container .second-about-container-items div p {
+    font-size: 2em;
+  }
+}

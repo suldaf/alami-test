@@ -1,0 +1,48 @@
+.input-contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.input-contact-container input[type="text"] {
+  margin-top: 7.5px;
+  margin-bottom: 5px;
+  border: 3px solid grey;
+  border-radius: 4px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  outline: none;
+}
+.input-contact-container input[type="text"]:focus {
+  border: 3px solid black;
+}
+
+.input-contact-container button {
+  width: 50px;
+  height: 35px;
+  color: white;
+  background-color: black;
+  border: 2px solid #274579;
+  border-radius: 5px;
+}
+.input-contact-container .input-success {
+  border: 3px solid #198754 !important;
+}
+.input-contact-container input[type="text"].input-success:focus {
+  border: 3px solid #198754;
+}
+
+.input-contact-container .input-error {
+  border: 3px solid #dc3545 !important;
+}
+
+.input-contact-container input[type="text"].input-error:focus {
+  border: 3px solid #dc3545;
+}
+
+.input-contact-container p {
+  margin: 0 0 7.5px 0;
+  color: #dc3545;
+}
